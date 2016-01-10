@@ -8,7 +8,7 @@
 <html>
 	<head>
 		{% load staticfiles %}
-		<title>Vadiraja K</title>
+		<title>Vadiraja K - My Website</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -36,6 +36,7 @@
 					<ul>
 						<li class="active" style="font-weight:bold;"><a href="/">V a d i r a j a &nbsp; K</a></li>
 						<li><a href="#aboutme">About me</a></li>
+						<li><a href="#interests">Interests</a></li>
 						<li><a href="/blog/">Blog</a></li>
 						<li><a href="https://drive.google.com/file/d/0B_v0hP2vfMqYc0M4ZF9nRVBWcjA/view" target="_blank">Resume</a></li>
 					</ul>
@@ -73,11 +74,6 @@
 				<header>
 					<h2>Meet Me!</h2>
 				</header>
-				<!--
-				<img style = "float:left; width: 28%;" src="{% static 'mywebsite/images/dota.png' %}" alt="" width="20%">
-
-				<img style = "float:left; width: 50%;" src="{% static 'mywebsite/images/code.png' %}" alt="" width="20%">
-				-->
 
 				<p>Hi, Im Vadi. Two things that take up most of my time are coding and DotA.</p>
 				<hr />
@@ -106,51 +102,55 @@
 		</div>
 	</div>
 	<!-- Main -->
+	<div id="interests">
 		<div id="main">
 			<div id="content" class="container">
-
+				<header>
+					<h2 style="display:inline-block;margin-bottom: 2%;">Things &nbsp; I &nbsp; </h2>
+					<i class="fa fa-heart fa-2x" style="margin-left:1%"></i>
+				</header>
 				<div class="row">
 					<section class="6u">
-						<a href="#" class="image full"><img src="{% static 'mywebsite/images/pic01.jpg' %}" alt=""></a>
+						<a href="http://mean.io/" target="_blank" class="image full"><img src="{% static 'mywebsite/images/mean.jpg' %}" alt=""></a>
 						<header>
-							<h2>Mauris vulputate dolor</h2>
+							<h2>MEAN Stack Development</h2>
 						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+						<p>MEAN.JS is a full-stack JavaScript solution that helps you build fast, robust, and maintainable production web applications using MongoDB, Express, AngularJS, and Node.js.</p>
 					</section>				
 					<section class="6u">
-						<a href="#" class="image full"><img src="{% static 'mywebsite/images/pic02.jpg' %}" alt=""></a>
+						<a class="image full"><img src="{% static 'mywebsite/images/opensource.png' %}" alt=""></a>
 						<header>
-							<h2>Mauris vulputate dolor</h2>
+							<h2>Open Source Projects</h2>
 						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+						<p>Universal access to product design via a free license. Soo awesome.</p>
 					</section>				
 				</div>
 
 				<div class="row">
 					<section class="6u">
-						<a href="#" class="image full"><img src="{% static 'mywebsite/images/pic03.jpg' %}" alt=""></a>
+						<a href="http://blog.dota2.com/" target="_blank" class="image full"><img src="{% static 'mywebsite/images/dota.jpg' %}" alt=""></a>
 						<header>
-							<h2>Mauris vulputate dolor</h2>
+							<h2>Defense of the Ancients (DotA)</h2>
 						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+						<p>I am one of the 11 million people who play DotA. It's fun, requires a lot of spontaneous decisions and very addictive :P.</p>
 					</section>				
 					<section class="6u">
-						<a href="#" class="image full"><img src="{% static 'mywebsite/images/pic04.jpg' %}" alt=""></a>
+						<a href="https://www.jetbrains.com/" target="_blank" class="image full"><img src="{% static 'mywebsite/images/code.png' %}" alt=""></a>
 						<header>
-							<h2>Mauris vulputate dolor</h2>
+							<h2>JetBrains IDEs</h2>
 						</header>
-						<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+						<p>Whichever technologies you use, there's a JetBrains tool to match! These make coding and debugging so much simpler.</p>
 					</section>				
 				</div>
 			
 			</div>
 		</div>
-
+	</div>
 	<!-- Tweet -->
 		<div id="tweet">
 			<div class="container">
 				<section>
-					<blockquote>&ldquo;Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.&rdquo; - </blockquote>
+					<blockquote>&ldquo;Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.&rdquo;</blockquote>
 				</section>
 			</div>
 		</div>
