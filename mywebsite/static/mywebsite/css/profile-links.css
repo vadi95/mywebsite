@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+	background: #222;
+	text-align: center;
+}
+body a {
+	color: #fff;
+	font-family: Open Sans;
+}
+body .links {
+	margin: 100px auto;
+	transform: translateZ(0);
+}
+body .links .profile-link {
+	position: relative;
+	margin: 10px;
+	display: inline-block;
+	font-size: 40px;
+	text-decoration: none;
+	transition: all 0.25s;
+}
+body .links .profile-link:hover {
+	transform: scale(1.2);
+}
+body .links .profile-link:hover:after {
+	opacity: 1;
+	transform: scale(1) translate(-50%, 0);
+}
+body .links .profile-link:active {
+	transform: scale(1.1);
+}
+body .links .profile-link:after {
+	content: "@" attr(data-user);
+	font-size: 12px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	text-align: center;
+	opacity: 0;
+	transform-origin: 0 0;
+	transform: scale(0) translate(-50%, -100px);
+	transition: transform 0.25s ease 0.25s, opacity 0.25s;
+}
