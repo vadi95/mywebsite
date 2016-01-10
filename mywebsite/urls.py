@@ -19,7 +19,7 @@ from django.contrib import admin
 from mywebsite import views
 
 urlpatterns = [
-    url(r'^$', views.home, name='home'),
-    url(r'^about-me/', views.aboutme, name='aboutme'),
-    url(r'^blog/', views.blog, name='blog'),
+    url(r'^$', views.home),
+    url(r'^blog/', views.blog),
+    url(r'^.*$', views.error),
 ]

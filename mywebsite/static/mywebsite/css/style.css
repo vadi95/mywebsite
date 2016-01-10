@@ -789,6 +789,52 @@
 		}
 
 /*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		background: url(../images/header.jpg) no-repeat bottom center;
+		background-attachment: fixed;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#header:before
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(64,64,64,0.125);
+		}
+/*********************************************************************************/
+/* Error-Header                                                                        */
+/*********************************************************************************/
+
+	#error-header
+	{
+		position: relative;
+		background: url(../images/404.png) no-repeat bottom center;
+		background-attachment: fixed;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#error-header:before
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(64,64,64,0.125);
+		}
+/*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
 
@@ -814,7 +860,8 @@
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
 		}
-		
+
+
 		#logo span
 		{
 			font-size: 1.4em;
