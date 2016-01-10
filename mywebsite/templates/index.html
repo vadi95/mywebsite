@@ -17,6 +17,7 @@
 		<script src="{% static 'mywebsite/js/skel.min.js' %}"></script>
 		<script src="{% static 'mywebsite/js/skel-panels.min.js' %}"></script>
 		<script src="{% static 'mywebsite/js/init.js' %}"></script>
+		<script src="{% static 'mywebsite/js/message_fade.js' %}"></script>
 
 		<link rel="stylesheet" href="{% static 'mywebsite/css/profile-links.css' %}"/>
 		<link rel="stylesheet" href="{% static 'mywebsite/css/skel-noscript.css' %}"/>
@@ -38,6 +39,7 @@
 							<li><a href="/#aboutme">About me</a></li>
 							<li><a href="/#interests">Interests</a></li>
 							<li><a href="/blog/">Blog</a></li>
+							<li><a href="/#contact">Contact</a></li>
 							<li><a href="https://drive.google.com/file/d/0B_v0hP2vfMqYc0M4ZF9nRVBWcjA/view" target="_blank">Resume</a></li>
 						</ul>
 					</nav>
@@ -60,8 +62,11 @@
 					<a class='profile-link twitter fa fa-linkedin' data-user='vadi95' href='https://www.linkedin.com/in/vadi95' target="_blank"></a>
 				</div>
 			</div>
-
-
+			<div id="intro-wrap">
+    			<div id="intro-text">
+        			<h1 style="font-size: 200%;color:white;font-weight: bold;">{{message}}</h1>
+    			</div>
+			</div>
 		</div>
 
 	<!-- Featured -->
@@ -153,23 +158,32 @@
 		</div>
 
 	<!-- Footer -->
+	<div id="contact">
 		<div id="footer">
 			<div class="container">
 				<section>
 					<header>
 						<h2>Get in touch</h2>
-						<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+						<span class="byline">Send me a message!</span>
 					</header>
 					<ul class="contact">
-						<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-						<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-						<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-						<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
+						<form method="post" action="/" class="cf">
+							{% csrf_token %}
+						  <div class="half left cf">
+							<input type="text" id="input-name" name="name" placeholder="Name" required>
+							<input type="email" id="input-email" name="email" placeholder="Email address" required>
+							<input type="text" name="subject" id="input-subject" placeholder="Subject" required>
+						  </div>
+						  <div class="half right cf">
+							<textarea name="message" id="input-message" placeholder="Message" required></textarea>
+						  </div>
+						  <input name="submit" type="submit" value="Submit" id="input-submit">
+						</form>
 					</ul>
 				</section>
 			</div>
 		</div>
-
+	</div>
 	<!-- Copyright -->
 		<div id="copyright">
 			<div class="container">

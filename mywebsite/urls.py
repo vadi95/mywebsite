@@ -21,5 +21,6 @@ from mywebsite import views
 urlpatterns = [
     url(r'^$', views.home),
     url(r'^blog/', views.blog),
+    url(r'^admin/', admin.site.urls),
     url(r'^.*$', views.error),
 ]
