@@ -1,0 +1,6 @@
+.idea/
+run.sh
+requirements.txt
+Procfile
+cf
+mywebsite/migrations
