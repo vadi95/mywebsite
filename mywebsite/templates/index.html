@@ -8,110 +8,109 @@
 <html>
 	<head>
 		{% load staticfiles %}
-		<title>Vadiraja K - My Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Vadiraja K" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="Personal website of Vadiraja K (vadi). A programming enthusiast currently pursuing B.Tech. in Computer Science and Engineering." />
+		<meta name="keywords" content="vadiraja, kanaradi, vadiraja k, vadiraja kanaradi, website, portfolio, resume, personal website" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<title>Vadiraja K - Personal Website</title>
+		<link rel="stylesheet" href="{% static 'mywebsite/css/profile-links.css' %}"/>
+		<link rel="stylesheet" href="{% static 'mywebsite/css/skel-noscript.css' %}"/>
+		<link rel="stylesheet" href="{% static 'mywebsite/css/style.css' %}"/>
+		<link rel="stylesheet" href="{% static 'mywebsite/css/style-desktop.css' %}"/>
+		<link rel="icon" type="image/jpg" href="{% static 'mywebsite/images/photo.jpg' %}">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="{% static 'mywebsite/js/skel.min.js' %}"></script>
 		<script src="{% static 'mywebsite/js/skel-panels.min.js' %}"></script>
 		<script src="{% static 'mywebsite/js/init.js' %}"></script>
 		<script src="{% static 'mywebsite/js/message_fade.js' %}"></script>
+		<script src="{% static 'mywebsite/js/scroll.js' %}"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		<link rel="stylesheet" href="{% static 'mywebsite/css/profile-links.css' %}"/>
-		<link rel="stylesheet" href="{% static 'mywebsite/css/skel-noscript.css' %}"/>
-		<link rel="stylesheet" href="{% static 'mywebsite/css/style.css' %}"/>
-		<link rel="stylesheet" href="{% static 'mywebsite/css/style-desktop.css' %}"/>
-
-
+		  ga('create', 'UA-73109534-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
 	</head>
 	<body class="homepage">
 
 	<!-- Header -->
-		<div id="header">
-			<div id="menu">
-				<div id="nav-wrapper">
-					<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li class="active" style="font-weight:bold;"><a href="/">V a d i r a j a &nbsp; K</a></li>
-							<li><a href="/#aboutme">About me</a></li>
-							<li><a href="/#blog">Blog</a></li>
-							<li><a href="/#interests">Interests</a></li>
-							<li><a href="/#contact">Contact</a></li>
-							<li><a href="https://drive.google.com/file/d/0B_v0hP2vfMqYc0M4ZF9nRVBWcjA/view" target="_blank">Resume</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-
-			<div class="left-container">
-				
-				<!-- Logo -->
-				<div id="logo">
-					<h1><a>Hello World!</a></h1>
-					<span class="tag">Welcome to my website.</span>
-
-				</div>
-
-				<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
-				<div class='links'>
-					<a class='profile-link twitter fa fa-envelope' data-user='vadi.fedx@gmail.com' href='mailto:vadi.fedx@gmail.com' target="_blank"></a>
-					<a class='profile-link github fa fa-github' data-user='vadi95' href='https://github.com/vadi95' target="_blank"></a>
-					<a class='profile-link twitter fa fa-linkedin' data-user='vadi95' href='https://www.linkedin.com/in/vadi95' target="_blank"></a>
-				</div>
-			</div>
-			<div id="intro-wrap">
-    			<div id="intro-text">
-        			<h1 style="font-size: 200%;color:white;font-weight: bold;">{{message}}</h1>
-    			</div>
+	<div id="header">
+		<div id="menu">
+			<div id="nav-wrapper">
+							<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li style="font-weight:bold;"><a href="/#header" class="scroll">V a d i r a j a &nbsp K</a></li>
+						<li><a href="/#aboutme" class="scroll">About me</a></li>
+						<li><a href="/#blog" class="scroll">Blog</a></li>
+						<li><a href="/#interests" class="scroll">Interests</a></li>
+						<li><a href="/#contact" class="scroll">Contact Me</a></li>
+						<li><a href=https://drive.google.com/file/d/0B_v0hP2vfMqYRVduYV9wUlk2Ulk/view?usp=sharing" target="_blank">Resume</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 
+		<div class="left-container">
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a>Hello World!</a></h1>
+				<span class="tag">Welcome to my website.</span>
+
+			</div>
+
+			<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+			<div class='links'>
+				<a class='profile-link twitter fa fa-envelope' data-user='vadi.fedx@gmail.com' href='mailto:vadi.fedx@gmail.com' target="_blank"></a>
+				<a class='profile-link github fa fa-github' data-user='vadi95' href='https://github.com/vadi95' target="_blank"></a>
+				<a class='profile-link twitter fa fa-linkedin' data-user='vadi95' href='https://www.linkedin.com/in/vadi95' target="_blank"></a>
+			</div>
+		</div>
+		<div id="intro-wrap">
+			<div id="intro-text">
+				<h1 style="font-size: 200%;color:white;font-weight: bold;">{{message}}</h1>
+			</div>
+		</div>
+	</div>
+
 	<!-- Featured -->
 	<div id="aboutme">
-		<div id="featured">
+		<div id="featured" style="background-color: #f2f2f2;">
 			<div class="container">
 				<header>
 					<h2>About Me!</h2>
 				</header>
 
-				<p>Hello, i'm Vadi. I am currently pursuing my B.Tech. in Computer Science and Engineering at
-					<a style="display:inline-block;color:#777;" href="http://www.nitk.ac.in" target="_blank">National Institute Of Technology Karnataka</a>. Two things i love the most are coding and DotA. I was introduced to programming
-					in the 6th grade when i learnt Logo and QBasic, since then i have encountered a lot of languages,
-					tools and frameworks and still there is a long way to go.
-					I'm not very good at outdoor sports, but i can play table-tennis and DotA quite well :D. I got
-				hooked to competitive programming from my second semester, i enjoyed getting <i class="fa fa-check fa-x" style="display:inline-block;color:green;"></i>
+				<p>Hello, I'm 'vadi'. I am currently pursuing my B.Tech. in Computer Science and Engineering at
+					<a style="display:inline-block;color:#777;" href="http://www.nitk.ac.in" target="_blank">National Institute Of Technology Karnataka</a>.
+					Two things I love the most are coding and DotA. I was introduced to programming
+					in the 6th grade when I learnt Logo and QBasic, since then I have encountered a lot of languages,
+					tools and frameworks that I have absolutely loved working with and still there is a long way to go.
+					In my spare time I usually play table-tennis or am on my laptop playing DotA or watching some movie or a TV show.
+					I got hooked to competitive programming in my second semester, I enjoyed getting <i class="fa fa-check fa-x" style="display:inline-block;color:green;"></i>
 					by solving tough problems that required some crazy idea which could be implemented efficiently only with
 				an equally crazy data structure.</p>
-				<hr id="blog"  />
-				<header>
-					<i class="fa fa-spinner fa-2x" style="display:inline-block;margin-left:1%;"></i>
-					<h2 style="display:inline-block;margin-left: 2%;">Mind Palace </h2>
-				</header>
+				<div id="blog">
+				<hr/>
 
-				<div class="row">
-					<section class="4u">
-						<span class="pennant"><span class="fa fa-briefcase"></span></span>
-						<h3>Nothing yet..</h3>
-						<p>This website took a week</p>
-						<a href="#" class="button button-style1">Read More</a>
-					</section>
-					<!--<section class="4u">
-						<span class="pennant"><span class="fa fa-lock"></span></span>
-						<h3>Maecenas luctus lectus</h3>
-						<p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec magna.</p>
-						<a href="#" class="button button-style1">Read More</a>
-					</section>
-					<section class="4u">
-						<span class="pennant"><span class="fa fa-globe"></span></span>
-						<h3>Maecenas luctus lectus</h3>
-						<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-						<a href="#" class="button button-style1">Read More</a>
-					</section>
-					-->
+					<header>
+						<i class="fa fa-spinner fa-2x" style="display:inline-block;margin-left:1%;"></i>
+						<h2 style="display:inline-block;margin-left: 2%;">Mind Palace </h2>
+					</header>
 
+					<div class="row">
+						<section class="4u">
+							<span class="pennant"><span class="fa fa-briefcase"></span></span>
+							<h3>Initial Commit</h3>
+							<p>Post about how I built and deployed this site in a couple of weeks. I decided to build a personal website for 2 reasons, it's cool :) and it helps in profile building.</p>
+							<a href="/blog/initial_commit" class="button button-style1">Read More</a>
+						</section>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -119,7 +118,7 @@
 	<!-- Main -->
 	<div id="interests">
 		<div id="main">
-			<div id="content" class="container">
+			<div id="content" class="container" style="max-width:1200px;">
 				<header>
 					<h2 style="display:inline-block;margin-bottom: 2%;">Things &nbsp; I &nbsp; </h2>
 					<i class="fa fa-thumbs-up fa-2x" style="margin-left:1%;"></i>
@@ -158,7 +157,7 @@
 						<header>
 							<h2>JetBrains IDEs</h2>
 						</header>
-						<p>Whichever technologies you use, there's a JetBrains tool to match! These make coding and debugging so much simpler. Any feature you can think of is present! Probably the only con is if you want to work simultaneously on 2 core languages (eg. python and javascript) then you'll need 2 IDEs.</p>
+						<p>Whichever technologies you use, there's a JetBrains tool to match! These make coding and debugging so much simpler. Any feature you can think of is present! The only con is if you want to work simultaneously on 2 core languages (eg. python and javascript) then you'll need 2 IDEs.</p>
 					</section>				
 				</div>
 			
@@ -169,7 +168,7 @@
 		<div id="tweet">
 			<div class="container">
 				<section>
-					<blockquote>&ldquo;Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.&rdquo;</blockquote>
+					<blockquote>&ldquo;Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.&rdquo; - Martin Golding</blockquote>
 				</section>
 			</div>
 		</div>
@@ -180,7 +179,7 @@
 			<div class="container">
 				<section>
 					<header>
-						<h2>Get in touch</h2>
+						<h2>Get in touch!</h2>
 						<span class="byline">Have a message?</span>
 					</header>
 					<ul class="contact">
@@ -204,7 +203,7 @@
 	<!-- Copyright -->
 		<div id="copyright">
 			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+				Framework : <a href="https://www.djangoproject.com/">Django &nbsp </a>Design: <a href="http://templated.co">TEMPLATED &nbsp</a>  Images: <a href="http://unsplash.com">Unsplash</a>
 			</div>
 		</div>
 

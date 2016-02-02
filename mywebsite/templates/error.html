@@ -9,15 +9,17 @@
 	<head>
 		{% load staticfiles %}
 		<title>Vadiraja K - My Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Vadiraja K" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="Personal website of Vadiraja K (vadi). A programming enthusiast currently pursuing B.Tech. in Computer Science and Engineering." />
+		<meta name="keywords" content="vadiraja, kanaradi, vadiraja k, vadiraja kanaradi, website, portfolio, resume, personal website" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="{% static 'mywebsite/js/skel.min.js' %}"></script>
 		<script src="{% static 'mywebsite/js/skel-panels.min.js' %}"></script>
 		<script src="{% static 'mywebsite/js/init.js' %}"></script>
-
+		<link rel="icon" type="image/jpg" href="{% static 'mywebsite/images/photo.jpg' %}">
 		<link rel="stylesheet" href="{% static 'mywebsite/css/profile-links.css' %}"/>
 		<link rel="stylesheet" href="{% static 'mywebsite/css/skel-noscript.css' %}"/>
 		<link rel="stylesheet" href="{% static 'mywebsite/css/style.css' %}"/>
@@ -28,17 +30,18 @@
 	<body class="homepage" style="overflow:hidden;">
 
 	<!-- Header -->
-		<div id="error-header" >
+		<div id="error-header" style="padding: 16em 0 12em 0;" >
 			<div id="menu">
 				<div id="nav-wrapper">
 					<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active" style="font-weight:bold;"><a href="/">V a d i r a j a &nbsp; K</a></li>
-							<li><a href="/#aboutme">About me</a></li>
-							<li><a href="/#interests">Interests</a></li>
-							<li><a href="/blog/">Blog</a></li>
-							<li><a href="https://drive.google.com/file/d/0B_v0hP2vfMqYc0M4ZF9nRVBWcjA/view" target="_blank">Resume</a></li>
+							<li class="link" style="font-weight:bold;" id="nav_header"><a href="/#header" class="scroll">V a d i r a j a &nbsp K</a></li>
+							<li class="link" id="nav_about_me"><a href="/#aboutme" class="scroll">About me</a></li>
+							<li class="link" id="nav_blog"><a href="/#blog" class="scroll">Blog</a></li>
+							<li class="link" id="nav_interests"><a href="/#interests" class="scroll">Interests</a></li>
+							<li class="link" id="nav_contact"><a href="/#contact" class="scroll">Contact Me</a></li>
+							<li><a href="https://drive.google.com/file/d/0B_v0hP2vfMqYc0M4ZF9nRVBWcjA/view?pref=2&pli=1" target="_blank">Resume</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -47,9 +50,9 @@
 
 				<!-- Logo -->
 				<div id="logo">
-					<a style="font-size: 5em;color:black;font-weight:bold;">You've wandered too far!</a>
-					<a style="font-size: 2em;display:inline-block;color:black;font-weight:bold;">Let's&nbsp; take&nbsp; you&nbsp; </a>
-					<a style="font-size: 2em;display:inline-block;color:black;font-weight:bold;" href="/">home!</a>
+					<a style="font-size: 5em;color:black;font-weight:bold;">{{message}}</a>
+					<a style="font-size: 2em;display:inline-block;color:black;font-weight:bold;word-spacing:10px">{{followup}}  </a>
+					<a style="font-size: 2em;display:inline-block;color:black;font-weight:bold;text-decoration:underline;margin-left:15px;" href={{link}}>{{linkword}}</a> <a style="font-size: 2em;display:inline-block;color:black;font-weight:bold;"> ! </a>
 
 				</div>
 
@@ -59,9 +62,9 @@
 
 
 	<!-- Copyright -->
-		<div id="copyright">
+		<div id="err-copyright">
 			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+				Framework : <a href="https://www.djangoproject.com/">Django &nbsp </a>Design: <a href="http://templated.co">TEMPLATED &nbsp</a>  Images: <a href="http://unsplash.com">Unsplash</a>
 			</div>
 		</div>
 

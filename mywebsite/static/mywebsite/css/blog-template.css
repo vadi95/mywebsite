@@ -1,0 +1,185 @@
+html {
+  font-size: 125%;
+  line-height: 1.4em;
+}
+
+body {
+  font-family: "Helvetica", serif;
+  font-weight: 400;
+  margin-top: 28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: white;
+  color:#111;
+  overflow-y: scroll;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  font-variant-numeric: diagonal-fractions;
+  -webkit-font-feature-settings: "kern", "liga", "clig", "frac";
+          font-feature-settings: "kern", "liga", "clig", "frac";
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1,
+.alpha, h2,
+.beta, h3,
+.gamma, h4,
+.delta, h5,
+.epsilon, h6,
+.zeta {
+  font-family: "Helvetica", serif;
+  letter-spacing: -0.025em;
+}
+
+h1,
+.alpha {
+  font-size: 40px;
+  line-height: 56px;
+  margin-top: 84px;
+  padding-top: 28px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+}
+
+h2,
+.beta {
+  font-size: 32px;
+  line-height: 56px;
+  margin-top: 28px;
+  padding-top: 28px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+}
+
+h3,
+.gamma {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 28px;
+  padding-top: 28px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+}
+
+h4,
+.delta {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 28px;
+  padding-top: 28px;
+  padding-bottom: 0px;
+  margin-bottom: -28px;
+}
+
+h5,
+.epsilon {
+  font-size: 17px;
+  line-height: 28px;
+  margin-top: 28px;
+  padding-top: 28px;
+  padding-bottom: 0px;
+  margin-bottom: -28px;
+}
+
+h6,
+.zeta {
+  font-size: 13px;
+  line-height: 28px;
+  margin-top: 28px;
+  padding-top: 28px;
+  padding-bottom: 0px;
+  margin-bottom: -28px;
+}
+
+p {
+  margin-top: 28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+}
+
+small,
+.small,
+.caption {
+  font-size: 13px;
+  line-height: 28px;
+}
+
+strong,
+.strong {
+  font-weight: bold;
+}
+
+.lede {
+  font-family: "Helvetica", serif;
+  font-weight: 300;
+
+}
+
+.meta {
+  font-family: "Helvetica", serif;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  margin-top: -28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+  color: #999;
+}
+
+img {
+  max-width: 100%;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+}
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  margin-top: 28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+}
+
+figcaption {
+  margin-top: -28px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 28px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.caption {
+  font-style: italic;
+}
+
+.full-width {
+  width: 100%;
+}
+
+li{
+  text-align: justify;
+}
+
