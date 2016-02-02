@@ -1,2 +1,2 @@
-# mywebsite
-Code for my personal website 
+# MyWebsite
+Code for my personal website - http://vadiraja-k.com
