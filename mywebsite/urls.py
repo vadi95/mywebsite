@@ -21,9 +21,7 @@ from mywebsite import views
 urlpatterns = [
     url(r'^$', views.home),
     url(r'^secret_admin/?', admin.site.urls),
-    url(r'^sitemap/?$', views.sitemap),
     url(r'^blog/([a-zA-Z0-9_]+)/?$', views.blog),
-    url(r'^site_map/?$', views.sitemap),
-    url(r'^sitemap.xml$', views.sitemap),
+    url(r'^sitemap.xml/?$', views.sitemap),
     url(r'^.*$', views.error),
 ]
