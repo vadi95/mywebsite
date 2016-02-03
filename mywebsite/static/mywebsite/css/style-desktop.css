@@ -65,7 +65,7 @@
 
 	#main
 	{
-		padding: 6em 0em;
+		padding: 4em 0em;
 	}
 	
 	.homepage #content header h2
@@ -86,6 +86,7 @@
 	#footer
 	{
 		padding: 6em 0em;
+   		margin-bottom: -3em;
 	}
 	
 /*********************************************************************************/
