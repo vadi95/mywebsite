@@ -4,3 +4,5 @@ requirements.txt
 Procfile
 cf
 mywebsite/migrations
+mywebsite/commands
+*.pyc
