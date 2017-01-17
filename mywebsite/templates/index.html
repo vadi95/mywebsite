@@ -12,7 +12,7 @@
 		<meta name="author" content="Vadiraja K" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Personal website of Vadiraja K (vadi). A programming enthusiast currently pursuing B.Tech. in Computer Science and Engineering." />
-		<meta name="keywords" content="vadiraja, kanaradi, vadiraja k, vadiraja kanaradi, website, portfolio, resume, personal website" />
+		<meta name="keywords" content="vadiraja, kanaradi, vadiraja k, vadiraja kanaradi, website, portfolio, personal website" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 		<title>Vadiraja K - Personal Website</title>
 		<link rel="stylesheet" href="{% static 'mywebsite/css/profile-links.css' %}"/>
@@ -50,7 +50,6 @@
 						<li><a href="/#blog" class="scroll">Blog</a></li>
 						<li><a href="/#interests" class="scroll">Interests</a></li>
 						<li><a href="/#contact" class="scroll">Contact Me</a></li>
-						<li><a href=https://drive.google.com/file/d/0B_v0hP2vfMqYRVduYV9wUlk2Ulk/view?usp=sharing" target="_blank">Resume</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -66,9 +65,9 @@
 
 			<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
 			<div class='links'>
-				<a class='profile-link twitter fa fa-envelope' data-user='vadi.fedx@gmail.com' href='mailto:vadi.fedx@gmail.com' target="_blank"></a>
-				<a class='profile-link github fa fa-github' data-user='vadi95' href='https://github.com/vadi95' target="_blank"></a>
-				<a class='profile-link twitter fa fa-linkedin' data-user='vadi95' href='https://www.linkedin.com/in/vadi95' target="_blank"></a>
+				<a style="font-family:Roboto;" class='profile-link twitter fa fa-envelope' data-user='vadi.fedx@gmail.com' href='mailto:vadi.fedx@gmail.com' target="_blank"></a>
+				<a style="font-family:Roboto;" class='profile-link github fa fa-github' data-user='vadi95' href='https://github.com/vadi95' target="_blank"></a>
+				<a style="font-family:Roboto;" class='profile-link twitter fa fa-linkedin' data-user='vadi95' href='https://www.linkedin.com/in/vadi95' target="_blank"></a>
 			</div>
 		</div>
 		<div id="intro-wrap">
@@ -88,13 +87,10 @@
 
 				<p>Hello, I'm 'vadi'. I am currently pursuing my B.Tech. in Computer Science and Engineering at
 					<a style="display:inline-block;color:#777;" href="http://www.nitk.ac.in" target="_blank">National Institute Of Technology Karnataka</a>.
-					Two things I love the most are coding and DotA. I was introduced to programming
+					I'm interested in machine learning, and am trying to learn and implement cool things. I was introduced to programming
 					in the 6th grade when I learnt Logo and QBasic, since then I have encountered a lot of languages,
 					tools and frameworks that I have absolutely loved working with and still there is a long way to go.
-					In my spare time I usually play table-tennis or am on my laptop playing DotA or watching some movie or a TV show.
-					I got hooked to competitive programming in my second semester, I enjoyed getting <i class="fa fa-check fa-x" style="display:inline-block;color:green;"></i>
-					by solving tough problems that required some crazy idea which could be implemented efficiently only with
-				an equally crazy data structure.</p>
+					</p>
 				<div id="blog">
 				<hr/>
 
@@ -125,6 +121,24 @@
 				</header>
 				<div class="row">
 					<section class="6u">
+						<a class="image full"><img src="{% static 'mywebsite/images/ml.jpg' %}" alt=""></a>
+						<header>
+							<h2>Machine Learning</h2>
+						</header>
+						<p>Endless scope to build cool things. Feels unreal but in the end its just math. If we can build AI then probably AI built us.
+						</p>
+					</section>
+					<section class="6u">
+						<a class="image full"><img src="{% static 'mywebsite/images/tf.jpg' %}" alt=""></a>
+						<header>
+                            <h2><a href="http://tensorflow.org"> TensorFlow</a> + <a href="http://keras.io">Keras</a></h2>
+						</header>
+						<p>Thank you.
+						</p>
+					</section>
+				</div>
+				<div class="row">
+					<section class="6u">
 						<a href="http://mean.io/" target="_blank" class="image full"><img src="{% static 'mywebsite/images/mean.jpg' %}" alt=""></a>
 						<header>
 							<h2>MEAN Stack Development</h2>
@@ -150,14 +164,14 @@
 						<header>
 							<h2>Defense of the Ancients (DotA)</h2>
 						</header>
-						<p>I am one of the 11 million people who play DotA. It's fun, requires a lot of spontaneous decision making and very addictive :P. Peak solo MMR : 3.6K</p>
+						<p>I am one of the 11 million people who play DotA. It's fun, requires a lot of spontaneous decision making and very addictive :P. Peak solo MMR : 4200</p>
 					</section>				
 					<section class="6u">
 						<a href="https://www.jetbrains.com/" target="_blank" class="image full"><img src="{% static 'mywebsite/images/code.png' %}" alt=""></a>
 						<header>
 							<h2>JetBrains IDEs</h2>
 						</header>
-						<p>Whichever technologies you use, there's a JetBrains tool to match! These make coding and debugging so much simpler. Any feature you can think of is present! The only con is if you want to work simultaneously on 2 core languages (eg. python and javascript) then you'll need 2 IDEs.</p>
+						<p>Whichever technologies you use, there's a JetBrains tool to match! These make coding and debugging so much simpler.</p>
 					</section>				
 				</div>
 			
@@ -168,7 +182,8 @@
 		<div id="tweet">
 			<div class="container">
 				<section>
-					<blockquote>&ldquo;Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.&rdquo; - Martin Golding</blockquote>
+					<blockquote style="font-size:6mm"><b style="color:white">Radford Neal</b>: I don't necessarily think that the Bayesian method is the best thing to do in all cases...<br>
+                               <b style="color:white">Geoff Hinton</b>: My prior probability for you saying this is zero, so I couldn't hear what you said.<br> - <a target="_blank" href="http://yann.lecun.com/ex/fun/">yann.lecun.com/ex/fun/</a></blockquote>
 				</section>
 			</div>
 		</div>
@@ -203,7 +218,7 @@
 	<!-- Copyright -->
 		<div id="copyright">
 			<div class="container">
-				Framework : <a href="https://www.djangoproject.com/">Django &nbsp </a>Design: <a href="http://templated.co">TEMPLATED &nbsp</a>  Images: <a href="http://unsplash.com">Unsplash</a>
+				Framework : <a style="color:lightgray" href="https://www.djangoproject.com/">Django &nbsp </a>Design: <a style="color:lightgray" href="http://templated.co">TEMPLATED &nbsp</a>  Background Image: <a style="color:lightgray" href="https://github.com/jcjohnson/neural-style">https://github.com/jcjohnson/neural-style</a>
 			</div>
 		</div>
 

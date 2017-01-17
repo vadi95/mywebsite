@@ -73,7 +73,7 @@
 		top: 0.5em;
 		font-size: 0.8em;
 	}
-	
+
 	sup
 	{
 		position: relative;
@@ -796,8 +796,7 @@
 	#error-header
 	{
 		position: relative;
-		background: url(../images/404.png) no-repeat bottom center;
-		background-attachment: fixed;
+		background: url(../images/404.jpg) no-repeat bottom center;
 		background-size: cover;
 		text-align: center;
 	}
